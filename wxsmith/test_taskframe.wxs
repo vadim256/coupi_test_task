@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="test_taskFrame">
+		<title>test__task</title>
+		<centered>1</centered>
+		<size>250,125</size>
+		<minsize>250,125</minsize>
+		<maxsize>250,125</maxsize>
+		<handler function="OnClose" entry="EVT_CLOSE" />
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxComboBox" name="ID_COMBOBOX1" variable="ComboBox1" member="yes">
+					<content>
+						<item>first </item>
+						<item>second</item>
+						<item>third</item>
+					</content>
+					<selection>0</selection>
+					<style>wxCB_SORT|wxCB_READONLY|wxCB_DROPDOWN|wxDOUBLE_BORDER</style>
+					<handler function="OnComboBox1Selected" entry="EVT_COMBOBOX" />
+				</object>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+					<handler function="OnButton1Click" entry="EVT_BUTTON" />
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxSHAPED</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no" />
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+	</object>
+</wxsmith>
